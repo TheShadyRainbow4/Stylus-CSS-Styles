@@ -1,1 +1,299 @@
-Start
+/* ==UserStyle==
+@name           Zach's DuckDuckGo (Lite HTML Normal) - Green Fusion V16
+@namespace      github.com/TheShadyRainbow4/Stylus-CSS-Styles/edit/main/CSS-Themes/DuckDuckGo-Lite-HTML.CSS
+@version        24.1.6
+@description    Context Aware: Result Reordering (Title -> Snippet -> URL)
+@author         TheShadyRainbow4
+==/UserStyle== */
+
+@-moz-document url-prefix("https://lite.duckduckgo.com/html"), url-prefix("http://lite.duckduckgo.com/html"), url-prefix("https://duckduckgo.com/html"), url-prefix("https://duckduckgo.com/lite") {
+
+    /* =========================================================
+       1. 🏠 HOMEPAGE SPECIFIC STYLES
+       ========================================================= */
+    
+    html:has(.logo_homepage),
+    body:has(.logo_homepage) {
+        height: 100%;
+        width: 100%;
+        overflow: hidden !important;
+    }
+
+    body:has(.logo_homepage) {
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+        font-family: arial, sans-serif;
+        
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important; 
+        justify-content: center !important; 
+        
+        padding-bottom: 20vh !important; 
+        box-sizing: border-box !important;
+    }
+
+    /* Homepage Logo - Strict Center & Ghost Removal */
+    .logo_homepage {
+        content: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Google_2011_logo.png/1280px-Google_2011_logo.png") !important;
+        object-fit: contain !important;
+        width: 300px !important;
+        height: 110px !important;
+        display: block !important;
+        
+        background-image: none !important;
+        background: none !important;
+        border: none !important;
+        
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-bottom: 25px !important;
+        flex-shrink: 0 !important;
+        
+        position: relative !important;
+        z-index: 10 !important;
+    }
+
+    /* Hide the top header bar ONLY on the homepage */
+    body:has(.logo_homepage) .header-wrap {
+        display: none !important;
+    }
+
+    /* Homepage Search Assembly - Forced alignment with logo */
+    body:has(.logo_homepage) .search-wrap--home,
+    body:has(.logo_homepage) .search {
+        width: 650px !important;
+        max-width: 90vw !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block !important;
+        position: relative !important;
+        padding: 0 !important;
+        left: 0 !important;
+        transform: none !important;
+    }
+
+    /* =========================================================
+       2. 📄 RESULTS PAGE / GLOBAL DEFAULTS
+       ========================================================= */
+    
+    body {
+        background-color: #fff;
+        font-family: arial, sans-serif;
+        color: #222;
+        overflow-y: auto !important;
+    }
+
+    /* --- THE FIX: Rigid Header Layout --- */
+    .header-wrap {
+        background-color: #f1f1f1 !important;
+        border-bottom: 1px solid #e5e5e5 !important;
+        
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        
+        padding: 12px 20px !important;
+        height: auto !important;
+        min-height: 95px !important; 
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Header Logo */
+    .header__logo, 
+    a.header__logo,
+    .header__logo-wrap {
+        background: none !important;
+        background-image: none !important;
+        content: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Google_2011_logo.png/320px-Google_2011_logo.png") !important;
+        object-fit: contain !important;
+        
+        width: 92px !important;
+        height: 35px !important;
+        display: block !important;
+        flex-shrink: 0 !important;
+        
+        margin: 5px 0 0 10px !important; 
+        
+        text-indent: -9999px !important;
+        z-index: 100 !important;
+    }
+    
+    /* Header Search Wrap */
+    .header__search-wrap {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        flex-grow: 1 !important;
+        height: 100% !important;
+        min-width: 0 !important; 
+    }
+
+    /* =========================================================
+       3. 🔍 SEARCH CONTAINER (Shared Logic)
+       ========================================================= */
+    
+    .search, 
+    .search--adv, 
+    .search--header {
+        position: relative !important;
+        display: block !important;
+        
+        background-image: -webkit-linear-gradient(top,#FFFFFF,#f1f1f1) !important;
+        background-color: #fff !important;
+        border: 1px solid #d9d9d9 !important;
+        border-top: 1px solid #c0c0c0 !important;
+        
+        box-shadow: 
+            inset 0 1px 2px rgba(0,0,0,0.1),
+            1px 1px 3px rgba(0,0,0,0.15) !important;
+        
+        border-radius: 2px !important; 
+        
+        height: 38px !important; 
+        box-sizing: border-box !important;
+        z-index: 10 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* Results Header Specific Width - INTEGRATING YOUR FIX */
+    .search--header {
+        width: 650px !important; 
+        min-width: 650px !important;
+        max-width: 650px !important;
+        
+        /* 🛡️ YOUR MANUAL FIX: Provides the necessary breathing room */
+        margin-left: 13px !important; 
+    }
+
+    /* Filter dropdowns alignment (Regions, Time) */
+    .header__search-wrap table {
+        margin-top: 8px !important;
+        margin-left: 13px !important; 
+    }
+
+    /* =========================================================
+       4. ⌨️ INPUT FIELD
+       ========================================================= */
+    
+    .search input[type="text"], 
+    .search__input,
+    .search--header input[type="text"] {
+        width: calc(100% - 78px) !important;
+        border: 0 !important;
+        background: transparent !important;
+        outline: none !important;
+        font-family: arial, sans-serif !important;
+        font-size: 16px !important;
+        color: #000 !important;
+        
+        margin: 0 !important;
+        padding: 0 10px !important;
+        height: 38px !important;
+        line-height: 38px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* =========================================================
+       5. 🟢 THE BUTTON
+       ========================================================= */
+    
+    .search input[type="submit"],
+    .search__button,
+    input[type="submit"].search__button {
+        position: absolute !important;
+        top: -1px !important; 
+        right: -1px !important; 
+        height: 38px !important; 
+        width: 75px !important;
+        box-sizing: border-box !important;
+        
+        -webkit-appearance: none !important; 
+        appearance: none !important;
+        
+        background-color: #568E24 !important;
+        background-image: 
+            url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/VisualEditor_-_Icon_-_Search-big_-_white.svg/20px-VisualEditor_-_Icon_-_Search-big_-_white.svg.png"),
+            -webkit-linear-gradient(top, #7db744, #568E24) !important;
+            
+        background-size: 20px, 100% 100% !important;
+        background-position: center center, center center !important;
+        background-repeat: no-repeat, no-repeat !important;
+        
+        border: 1px solid #3b6e22 !important; 
+        border-radius: 0 2px 2px 0 !important; 
+        
+        color: transparent !important;
+        text-indent: -9999px !important;
+        cursor: pointer !important;
+        z-index: 20 !important;
+    }
+
+    .search input[type="submit"]:hover {
+        background-image: 
+            url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/VisualEditor_-_Icon_-_Search-big_-_white.svg/20px-VisualEditor_-_Icon_-_Search-big_-_white.svg.png"),
+            -webkit-linear-gradient(top, #568E24, #44721d) !important;
+        border-color: #2f561b !important; 
+    }
+
+    /* =========================================================
+       6. 🥪 RESULT RE-ORDERING (Title -> Snippet -> URL)
+       ========================================================= */
+    
+    table:not(.header-wrap) tr td[valign="top"] {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        padding-bottom: 25px !important;
+        padding-left: 128px !important; 
+    }
+
+    table:not(.header-wrap) tr td[valign="top"] br {
+        display: none !important;
+    }
+
+    /* 🏷️ 1. TITLE (Top) */
+    .result-link { 
+        order: 1 !important; 
+        font-size: 18px !important; 
+        color: #1203b5 !important; 
+        text-decoration: underline !important; 
+        margin-bottom: 2px !important; 
+        display: block !important; 
+        width: 100% !important; 
+    }
+
+    /* 📄 2. SNIPPET (Middle) */
+    /* DuckDuckGo Lite usually has the snippet as raw text or spans inside the TD */
+    /* We target the result container and let the flex order handle it */
+    .result-snippet {
+        order: 2 !important;
+        display: block !important;
+        color: #222 !important;
+        margin-bottom: 2px !important;
+    }
+
+    /* 🔗 3. URL & LOGO (Bottom) */
+    .result-url, .url { 
+        order: 3 !important; 
+        color: #006621 !important; 
+        font-size: 13px !important; 
+        display: block !important; 
+        margin-top: 2px !important; 
+    }
+
+    /* =========================================================
+       7. 🧹 CLEANUP
+       ========================================================= */
+    .tag-home__item, .badge-link, .tag-home__nav__wrap, .footer,
+    .onboarding-ed, .onboarding-bottom-bathroomguy, .header__text,
+    .site-wrapper-border {
+        display: none !important;
+        visibility: hidden !important;
+    }
+
+}

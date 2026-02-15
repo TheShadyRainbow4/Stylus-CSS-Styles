@@ -47,9 +47,7 @@ Step into a world powered by pure imagination (and a whole lot of AI)!
 
 
 
-## **📸 System Gallery**
-
-###  IGNORE THE IMAGES IN THIS SECTION FOR NOW THEY ARE JUST PLACEHOLDERS FROM ONE OF MY OTHER PROJECTS :) 
+## **📸 Style Gallery**
 
 <div align="center">
 

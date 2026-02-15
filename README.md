@@ -49,31 +49,31 @@ Step into a world powered by pure imagination (and a whole lot of AI)!
 
 ## **📸 System Gallery**
 
-Take a tour through the retro-modern interface of the EliteSoftware Operating System.
+###  IGNORE THE IMAGES IN THIS SECTION FOR NOW THEY ARE JUST PLACEHOLDERS FROM ONE OF MY OTHER PROJECTS :) 
 
 <div align="center">
 
 <table width="100%">
-  <tr>
-    <td align="center" width="50%">
-      <b>🖥️ TEMPLATE AREA</b><br>
-      <a href="https://i.postimg.cc/mrV7V6tv/Elite-Software-Client-Company-Simulator-BOOT-LOADING-SCREEN.png" target="_blank"><img src="https://i.postimg.cc/mrV7V6tv/Elite-Software-Client-Company-Simulator-BOOT-LOADING-SCREEN.png" alt="TEMPLATE AREA" width="100%"></a>
-    </td>
-    <td align="center" width="50%">
-      <b>⚙️ TEMPLATE AREA</b><br>
-      <a href="https://i.postimg.cc/KzHBhk79/Elite-Software-Client-Company-Simulator-BIOS.png" target="_blank"><img src="https://i.postimg.cc/KzHBhk79/Elite-Software-Client-Company-Simulator-BIOS.png" alt="BIOS Screen" width="100%"></a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <b>🔑 TEMPLATE AREA</b><br>
-      <a href="https://i.postimg.cc/HLTQwCsy/Elite-Software-Client-Company-Simulator-LOGIN-SCREEN.png" target="_blank"><img src="https://i.postimg.cc/HLTQwCsy/Elite-Software-Client-Company-Simulator-LOGIN-SCREEN.png" alt="TEMPLATE AREA" width="100%"></a>
-    </td>
-    <td align="center" width="50%">
-      <b>👋 TEMPLATE AREA</b><br>
-      <a href="https://pixabay.com/images/download/geralt-glass-2502963_1920.jpg" target="_blank"><img src="https://i.postimg.cc/pTTzSYjr/Elite-Software-Client-Company-Simulator-Welcome-Screeen.png" alt="TEMPLATE AREA" width="100%"></a>
-    </td>
-  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <b>🖥️ Homepage</b><br>
+      <a href="https://i.postimg.cc/P5mV4Dsr/Sunday-02-2026-004309-Clip.jpg" target="_blank"><img src="https://i.postimg.cc/P5mV4Dsr/Sunday-02-2026-004309-Clip.jpg" alt="TEMPLATE AREA" width="100%"></a>
+    </td>
+    <td align="center" width="50%">
+      <b>⚙️ Homepage & Results</b><br>
+      <a href="https://i.postimg.cc/9QGgp95c/Sunday-02-2026-004444-Clip.jpg" target="_blank"><img src="https://i.postimg.cc/9QGgp95c/Sunday-02-2026-004444-Clip.jpg" alt="BIOS Screen" width="100%"></a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <b>🔑 Results Page</b><br>
+      <a href="https://i.postimg.cc/k5s1rd5q/Sunday-02-2026-010104-Clip.jpg" target="_blank"><img src="https://i.postimg.cc/k5s1rd5q/Sunday-02-2026-010104-Clip.jpg" alt="TEMPLATE AREA" width="100%"></a>
+    </td>
+    <td align="center" width="50%">
+      <b>👋 Search Header on Results Page</b><br>
+      <a href="https://i.postimg.cc/BvpYWGv0/Sunday-02-2026-010115-Clip.jpg" target="_blank"><img src="https://i.postimg.cc/BvpYWGv0/Sunday-02-2026-010115-Clip.jpg" alt="TEMPLATE AREA" width="100%"></a>
+    </td>
+  </tr>
 </table>
 
 
@@ -92,7 +92,7 @@ Expect the unexpected. Embrace the chaos. And have fun!
 
 
 
-## **🎨 Media Assets**
+## **🎨 EliteSoftware Branding**
 
 <div align="center">
 <a href='https://i.postimg.cc/DZTjtNg1/Elite-Software-Company-Simulator-LOGO.png' target='_blank'><img src='https://i.postimg.cc/DZTjtNg1/Elite-Software-Company-Simulator-LOGO.png' border='0' alt='Elite-Software-Client' width="250"></a>
@@ -111,7 +111,3 @@ Expect the unexpected. Embrace the chaos. And have fun!
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
-
-## **🙏 Acknowledgments**
-
-
